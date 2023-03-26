@@ -12,3 +12,13 @@ int Count (string[] vhod)
     }
     return count;
 }
+
+string Obhod (string[] vhod, int i)
+{  
+    string word;
+
+    word = vhod[i];
+
+    if (word.Length <= 3) return word;
+    else return String.Empty;
+}
