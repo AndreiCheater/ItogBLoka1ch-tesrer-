@@ -22,3 +22,19 @@ string Obhod (string[] vhod, int i)
     if (word.Length <= 3) return word;
     else return String.Empty;
 }
+
+int i = 0;
+
+    for (int j = 0; j < vhod.Length; j++)
+    {
+        string word = Obhod(vhod, j);
+        if(word != String.Empty) 
+        {
+            itog[i] = word;
+            i++;
+        }
+    }
+    for (i = 0; i < itog.Length; i++)
+    {
+        Console.Write(itog[i] + " ");
+    }
