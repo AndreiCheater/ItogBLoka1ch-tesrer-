@@ -6,8 +6,7 @@ int Count (string[] vhod)
     int count = 0;
     for (int i = 0; i < vhod.Length; i++)
     {
-        string word;
-        word = vhod[i];
+        string word = vhod[i];
         if (word.Length <= 3) count++;
     }
     return count;
@@ -15,26 +14,23 @@ int Count (string[] vhod)
 
 string Obhod (string[] vhod, int i)
 {  
-    string word;
-
-    word = vhod[i];
-
+    string word = vhod[i];
     if (word.Length <= 3) return word;
     else return String.Empty;
 }
 
 int i = 0;
 
-    for (int j = 0; j < vhod.Length; j++)
-    {
-        string word = Obhod(vhod, j);
-        if(word != String.Empty) 
-        {
-            itog[i] = word;
-            i++;
-        }
-    }
-    for (i = 0; i < itog.Length; i++)
-    {
-        Console.Write(itog[i] + " ");
-    }
+for (int j = 0; j < vhod.Length; j++)
+{
+     string word = Obhod(vhod, j);
+     if(word != String.Empty) 
+     {
+         itog[i] = word;
+         i++;
+      }
+}
+for (i = 0; i < itog.Length; i++)
+{
+    Console.Write(itog[i] + " ");
+}
